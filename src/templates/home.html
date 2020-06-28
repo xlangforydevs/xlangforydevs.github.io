@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <title>
+        {% block language1 %} X {% endblock %}
+        lang for {% block language2 %} Y {% endblock %}
+        developers
+    </title>
+</head>
+
+<body>
+    <center>
+        <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+            {{self.language1()}} lang for {{self.language2()}} developers
+        </h1>
+
+        {% block quirky_header %}
+        <h3>
+            Because <i>"Your second language is the hardest to learn"</i>
+        </h3>
+
+        {% endblock %}
+
+        <a href="/">&#32;home&#32;</a>
+        <a href="/about">&#32;about&#32;</a>
+        <a href="/changelog">&#32;changelog&#32;</a>
+        <a href="https://github.com/kilacoda/x-lang-for-y-devs">&#32;github</a>
+        <br>
+        <br>
+        <br>
+
+        {% block front_page_selector %}
+        <p style="font-size: xx-large;">
+            I want to learn<br><br>
+            <select style="font-size: large;" id="">
+                <option value="kotlin">Kotlin</option>
+                <option value="python">Python</option>
+                <option value="javascript">JavaScript</option>
+                <option value="dart">Dart</option>
+            </select>
+            as a
+            <select style="font-size: large;">
+                <option value="python">Python</option>
+                <option value="kotlin">Kotlin</option>
+                <option value="javascript">JavaScript</option>
+                <option value="dart">Dart</option>
+                <option value="noob">noob</option>
+            </select>
+            <br><br>
+            developer.
+            <br><br>
+            <button onclick="alert('yay button go clik clik');" style="
+                    border-radius: 6px;
+                    font-size: large;
+                    color: aliceblue;
+                    font-style: italic;
+                    background-color: black;
+                    padding: 15px;
+                ">
+                So help me weblords!
+            </button>
+        </p>
+
+        {% endblock %}
+    </center>
+
+    {% block other_stuff %}{% endblock %}
+        
+
+</body>
+
+</html>
