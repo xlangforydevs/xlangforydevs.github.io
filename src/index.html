@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <title>
+        xlangforydevs: X Language for Y Developers
+    </title>
+    <script type="text/javascript" src="./scripts/buttons.js"></script>
+</head>
+
+<body>
+    <center>
+        <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+            x lang for y developers
+        </h1>
+        <!-- 
+        
+        <h3>
+            Because <i>"Your second language is the hardest to learn"</i>
+        </h3> -->
+
+
+
+        <a href="./index.html">&#32;home</a>&nbsp;
+        <a href="./about.html">&#32;about</a>&nbsp;
+        <a href="./changelog.html">&#32;changelog</a>&nbsp;
+        <a href="https://github.com/xlangforydevs/xlangforydevs.github.io">&#32;github</a>
+        <br>
+        <br>
+        <br>
+
+        <p style="font-size: xx-large;">
+            I want to learn<br><br>
+            <!-- lang1 because the tutorials are meant to be organised as <lang_to_learn>/<lang_coming_from>.html -->
+            <select style="font-size: large;" id="lang1">
+                <option value="python">Python</option>
+                <option value="kotlin">Kotlin</option>
+                <option value="javascript">JavaScript</option>
+                <option value="dart">Dart</option>
+                <option value="cpp">C++</option>
+            </select>
+            as a
+            <select style="font-size: large;" id="lang2">
+                <option value="noob">noob</option>
+                <option value="python">Python</option>
+                <option value="kotlin">Kotlin</option>
+                <option value="javascript">JavaScript</option>
+                <option value="dart">Dart</option>
+                <option value="cpp">C++</option>
+            </select>
+            <br><br>
+            developer.
+            <br><br>
+            <br><br>
+            <button onclick='switchToRelevantPage(
+                document.getElementById("lang1").value,
+                document.getElementById("lang2").value,
+            )' style="
+                    border-radius: 6px;
+                    font-size: large;
+                    color: aliceblue;
+                    font-style: italic;
+                    background-color: black;
+                    padding: 15px;
+                ">
+                So help me weblords!
+            </button>
+        </p>
+    </center>
+
+
+</body>
+
+</html>
